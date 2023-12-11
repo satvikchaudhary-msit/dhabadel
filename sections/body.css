@@ -1,0 +1,82 @@
+.body {
+    background: rgb(248, 248, 248);
+    padding: 0 0rem 0 3rem;
+
+}
+.rest_card {
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+}
+.rest_card:hover{
+    transform: scale(1.05);
+}
+
+.restaurant-name {
+
+    /* font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: 'Playfair Display', serif; */
+
+    font-size: 24px; /* Increase the font size for the heading */
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+    color: #333; 
+    
+}
+
+.restraunt_image{
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+.rastraunt_cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    max-width: 900px;
+    margin-bottom: 20px;
+    
+}
+
+.restaurant-details {
+    padding: 15px;
+    background-color: #ffffff;
+  }
+
+
+.search-container {
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 2rem 1rem;
+    padding: 1rem;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+  }
+
+.search-button {
+    background-color: #e74e4e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+  }

@@ -1,0 +1,38 @@
+.shimmer-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d86f6f;
+  }
+
+  .loading-shimmer {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .shimmer {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    animation: shimmerAnimation 1.5s infinite linear;
+    background: linear-gradient(to right, transparent 0%, #e0e0e0 50%, transparent 100%);
+  }
+  .loading-text {
+    font-size: 25px; /* Adjust the font size as needed */
+    color: #e0e0e0; /* Adjust the text color as needed */
+    z-index: 1;
+  }
+
+  @keyframes shimmerAnimation {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }

@@ -1,0 +1,26 @@
+.header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header-img_img {
+  width: 70px;
+}
+
+.header-img {
+  align-items: center;
+  width: 50px;
+  display: flex;
+}
+
+.header-list > ul {
+  justify-content: space-between;
+  list-style: none;
+  display: flex;
+}
+
+.header-list > ul > li {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.2e334b56.css.map */

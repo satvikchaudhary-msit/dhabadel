@@ -1,0 +1,49 @@
+.rest_card {
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+.rest_card > p, .rest_card > h2 {
+  font-family: Poppins, sans-serif;
+}
+
+.restraunt_image {
+  width: 10rem;
+  height: 9rem;
+}
+
+.rastraunt_cards {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header-img_img {
+  width: 70px;
+}
+
+.header-img {
+  align-items: center;
+  width: 50px;
+  display: flex;
+}
+
+.header-list > ul {
+  justify-content: space-between;
+  list-style: none;
+  display: flex;
+}
+
+.header-list > ul > li {
+  padding: 10px;
+}
+
+.search_bar {
+  margin: 1rem 0;
+}
+
+/*# sourceMappingURL=index.a3cfef33.css.map */
