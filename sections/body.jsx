@@ -15,6 +15,7 @@ const RestrauntCard = ({restInfo}) => {
                     <h2 className='restaurant-name'>{info.name}</h2>
                     <p>Average Rating {info.avgRating}</p>
                     <p>Distance {info.sla.lastMileTravelString}</p>
+                    <p>Locality: {info.locality}</p>
                     <p>{info.cuisines.join(", ")}</p>
                 </div>
             </div>;
@@ -29,7 +30,7 @@ const Body = () => {
 
 
     async function restrauntData() {
-        const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.115586&lng=72.852996&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6255588&lng=77.0958507&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const jsonData = await data.json();
         console.log(jsonData);
         await setRestaurantCard(jsonData?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -47,8 +48,8 @@ const Body = () => {
     return (restaurantCardData?.length === 0) ? <Shimmer /> :<div className='body'>
     <div className='search-container'>
 
-        <input type='text' class="search-input" onChange={(e) => setSearchText(e.target.value) } value= {searchTxt} ></input>
-        <button class="search-button" onClick={"./"}> Search</button>
+        <input type='text' className="search-input" onChange={(e) => setSearchText(e.target.value) } value= {searchTxt} ></input>
+        <button className="search-button" onClick={null}> Search</button>
 
     </div>
 

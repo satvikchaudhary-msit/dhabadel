@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import logo from '../assets/Dhaba.png';
 
+import { Link } from 'react-router-dom';
 import './header.css';
 
 
@@ -18,10 +19,11 @@ const Header = () => {
 
 
             <div class="nav-items">
-                <a href="#" class="nav-item">Home</a>
-                <a href="#" class="nav-item">About</a>
-                <a href="#" class="nav-item">Contact</a>
-                <a href="#" class="nav-item">Cart</a>
+                <Link to = "/" class="nav-item">Home</Link>
+                <Link to = "/aboutus" class="nav-item">About</Link>
+                <Link to = "/contact" class="nav-item">Contact</Link>
+                <Link to = "/" class="nav-item">Cart</Link>
+
             </div>
 
             
